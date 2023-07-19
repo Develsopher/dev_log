@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>흐르는 텍스트</title>
+        <style>
+            /* 텍스트 컨테이너 스타일 */
+            .text-container {
+                position: relative;
+                width: 100%;
+                height: 200px;
+                overflow: hidden;
+                background-color: #333;
+                color: #fff;
+                font-size: 36px;
+                font-family: 'Arial', sans-serif;
+            }
+
+            /* 텍스트 애니메이션 적용 */
+            @keyframes flow-text {
+                0% {
+                    left: 100%;
+                }
+                100% {
+                    left: -100%;
+                }
+            }
+
+            /* 흐르는 텍스트 스타일 */
+            .flowing-text {
+                position: absolute;
+                white-space: nowrap;
+                animation: flow-text 10s linear infinite;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="text-container">
+            <div class="flowing-text">흐르는 텍스트를 만들어봅시다!</div>
+        </div>
+    </body>
+</html>
