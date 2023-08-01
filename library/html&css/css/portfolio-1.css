@@ -162,16 +162,22 @@ button:hover {
 .do-item {
     height: 380px;
     color: white;
+    padding: 30px 0 0 20px;
+    position: relative;
+}
+
+#do-1 {
+    
+    /* transition: clip-path 0.3s ease; */
+    /* width: 300px;
+    height: 300px; */
 }
 
 #do-1 {
     background-image: url(../assets/images/portfolio-1.jpg);
-    transition: clip-path 0.3s ease;
+    background-size: cover;
 }
 
-#do-1:hover {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 25%, 75% 25%, 75% 100%, 0% 100%);
-}
 
 #do-2 {
     background-image: url(../assets/images/portfolio-2.jpg);
