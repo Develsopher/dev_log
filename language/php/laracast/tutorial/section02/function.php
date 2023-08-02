@@ -20,3 +20,4 @@ function abort($status_code = 404) {
 
     die();
 }
+
